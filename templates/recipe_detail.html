@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+{{ instance.recipeName }} | {{ block.super }} 
+{% endblock head_title %}
+
+{% block content %}
+
+<div class="col-sm-6 ">
+	<h1>{{ title }} </h1>
+	Posted on: <small>{{instance.timestamp}}</small><br />
+
+	
+	{{ instance.recipeName }} <br />
+	{{ instance.recipeInstructions }}<br />
+	{{ instance.recipeIngredients }}<br />
+
+</div>
+	
+{% endblock content %}	
